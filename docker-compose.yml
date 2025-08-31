@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  app:
+    build: ./backend
+    container_name: php_app
+    ports:
+      - "8080:80"
+    volumes:
+      # 👉 Monta só o código da app, mas mantém a pasta vendor dentro do container
+      - ./backend:/var/www/html:cached
+      - /var/www/html/vendor
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.6
+    container_name: mysql_db
+    restart: always
+    environment:
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: app_videos
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

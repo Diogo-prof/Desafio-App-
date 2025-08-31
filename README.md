@@ -26,18 +26,9 @@ Este projeto é uma aplicação web desenvolvida com o objetivo de ser usada par
 cd Desafio-App-</code></pre>
 </div>
 
-<div>
-<h4>2️⃣ Instalar as dependências</h4>
-      <p><strong>Frontend:</strong></p>
-      <pre><code>cd frontend
-npm install</code></pre>
-      <p><strong>Backend:</strong></p>
-      <pre><code>cd backend
-npm install</code></pre>
-</div>
 
 <div>
-    <h4>3️⃣ Configurar a base de dados</h4>
+    <h4>2️⃣ Configurar a base de dados</h4>
       <p>Instale o Docker Desktop caso não esteja instalado: <a href="https://www.docker.com/products/docker-desktop/" target="_blank">Docker Desktop</a></p>
       <p>Correr os comandos:</p>
       <pre><code>docker compose build --no-cache
@@ -45,17 +36,7 @@ docker compose up</code></pre>
 </div>
 
 <div>
- <h4>4️⃣ Iniciar a aplicação</h4>
-      <p><strong>Frontend:</strong></p>
-      <pre><code>cd frontend
-npm start</code></pre>
-      <p><strong>Backend:</strong></p>
-      <pre><code>cd backend
-npm start</code></pre>
-</div>
-
-<div>
-<h3>5️⃣ Dados de teste da Base de Dados</h3>
+<h4>3️⃣ Dados de teste da Base de Dados no Postman</h4>
       <ul>
         <li><strong>Username Teste:</strong> teste@teste.com</li>
         <li><strong>Password Teste:</strong> 123456</li>
